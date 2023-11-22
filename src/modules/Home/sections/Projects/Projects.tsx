@@ -25,7 +25,7 @@ const Projects = () => {
   const isDataEmpty = !Array.isArray(filteredProduct) || filteredProduct.length < 1 || !filteredProduct;
 
   return (
-    <section id='works' className='container border border-white' >
+    <section id='works' className='container' >
 
       <motion.h1 variants={fadeLeft} {...motionStep} className='flex items-center gap-2 text-lg md:text-3xl font-medium text-white mb-12' >
         <span className='text-red-700 font-mono' >03. </span>
