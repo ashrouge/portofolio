@@ -45,29 +45,29 @@ const Header = () => {
         <div className='max-md:mr-10 mr-4'>
           <Image src="/bwimotor.png" width={60} height={60} alt="honda" />
         </div>
-        <Link href='/' className='flex justify-center align-bottom items-end' >
-          <div className='flex'>
+        <Link href='/' className='flex justify-center align-bottom items-end border' >
+          <div className='flex w-fit'>
           <AnimatedTextCharacter
             text='M'
-            className='text-sm md:text-2xl text-pink-700/80'
+            className='text-xs md:text-2xl text-pink-700/80'
           />
           <AnimatedTextCharacter
             text='urjani '
-            className='text-sm md:text-2xl text-pink-700/80'
+            className='text-xs md:text-2xl text-pink-700/80'
           />
           </div>
           <div className='flex'>
           <AnimatedTextCharacter
             text='B'
-            className='text-sm md:text-2xl text-pink-700/80'
+            className='text-xs md:text-2xl text-pink-700/80'
           />
           <AnimatedTextCharacter
             text='anyuwangi '
-            className='text-sm md:text-2xl text-pink-700/80'
+            className='text-xs md:text-2xl text-pink-700/80'
           />
           <AnimatedTextCharacter
             text='Motor_bwi'
-            className='text-sm md:text-2xl text-pink-700/80'
+            className='text-xs md:text-2xl text-pink-700/80'
           />
           </div>
         </Link>
