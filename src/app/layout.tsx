@@ -24,7 +24,7 @@ export default function RootLayout({
         <Meta />
       </head>
 
-      <body className='text-base bg-white dark:bg-black dark:text-slate-200' >
+      <body className='text-base bg-slate-300 dark:bg-black dark:text-slate-200' >
 
         <Socials />
         <Mail />

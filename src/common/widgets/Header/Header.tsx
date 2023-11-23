@@ -5,6 +5,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { navData } from '@config/constants'
 import AnimatedTextCharacter from '@components/motion/AnimatedTextCherecter'
+import Image from 'next/image'
 
 const Header = () => {
 
@@ -38,19 +39,42 @@ const Header = () => {
   };
 
   return (
-    <header className='top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 container' >
-      <div className='flex items-center justify-center md:justify-between' >
-
-        <Link href='/' className='flex' >
+    <header className='top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 px-24 bg-slate-300' >
+      <div className='flex items-center justify-around md:justify-between' >
+        <div className='flex md:justify-start items-end'>
+        <div className='max-md:mr-10 mr-4'>
+          <Image src="/bwimotor.png" width={60} height={60} alt="honda" />
+        </div>
+        <Link href='/' className='flex justify-center align-bottom items-end' >
+          <div className='flex'>
           <AnimatedTextCharacter
-            text='J'
-            className='text-4xl font-semibold text-red-700'
+            text='M'
+            className='text-sm md:text-2xl text-pink-700/80'
           />
           <AnimatedTextCharacter
-            text='ohar.'
-            className='text-4xl text-pink-700/80'
+            text='urjani '
+            className='text-sm md:text-2xl text-pink-700/80'
           />
+          </div>
+          <div className='flex'>
+          <AnimatedTextCharacter
+            text='B'
+            className='text-sm md:text-2xl text-pink-700/80'
+          />
+          <AnimatedTextCharacter
+            text='anyuwangi '
+            className='text-sm md:text-2xl text-pink-700/80'
+          />
+          <AnimatedTextCharacter
+            text='Motor_bwi'
+            className='text-sm md:text-2xl text-pink-700/80'
+          />
+          </div>
         </Link>
+        <div className='max-md:ml-10 md:hidden'>
+          <Image src="/Honda_Logo.svg" width={60} height={60} alt="honda" />
+        </div>
+        </div>
 
         <motion.ul variants={container} initial="hidden" animate="visible" className='__navright' >
 
