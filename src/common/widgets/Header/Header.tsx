@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <header className='top-0 w-full z-50 relative py-[30px] mx-auto right-0 left-0 px-24 bg-slate-300' >
       <div className='flex items-center justify-around md:justify-between' >
-        <div className='flex md:justify-start items-end'>
+        <div className='flex md:justify-start items-center max-md:items-end'>
         <div className='max-md:mr-10 mr-4'>
           <Image src="/bwimotor.png" width={60} height={60} alt="honda" />
         </div>
